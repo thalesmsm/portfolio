@@ -7,6 +7,7 @@ import code from "../public/code.png";
 import web1 from "../public/web1.png";
 import web2 from "../public/web2.png";
 import { useState } from 'react';
+import LinguagensCard from '../components/LinguagensCard';
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -82,59 +83,13 @@ export default function Home() {
               programming and teaching.
             </p>
           </div>
-          <div className='md:flex gap-10'>
-
-
-            {/* CRIAR COMPONENTE PARA CARDS */}
-
-
-            <div className='flex flex-col items-center text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-200'>
-              <Image src={code} alt='design' width={100} height={100}/>
-              <h3 className='text-lg font-medium pt-8 pb-2'>JavaScript</h3>
-              <p className='py-2'>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus fugit quod dolores 
-              </p>
-              <h4 className='py-4 text-teal-600'>Back end</h4>
-              <p className='text-gray-800 py-1 dark:text-gray-200'>Node.js</p>
-              <p className='text-gray-800 py-1 dark:text-gray-200'>Node.js</p>
-              <p className='text-gray-800 py-1 dark:text-gray-200'>Node.js</p>
-            </div>
-
-            <div className='flex flex-col items-center text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-200'>
-              <Image src={code} alt='design' width={100} height={100}/>
-              <h3 className='text-lg font-medium pt-8 pb-2'>JavaScript</h3>
-              <p className='py-2'>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus fugit quod dolores 
-              </p>
-              <h4 className='py-4 text-teal-600'>Back end</h4>
-              <p className='text-gray-800 py-1 dark:text-gray-200'>Node.js</p>
-              <p className='text-gray-800 py-1 dark:text-gray-200'>Node.js</p>
-              <p className='text-gray-800 py-1 dark:text-gray-200'>Node.js</p>
-            </div>
-
-            <div className='flex flex-col items-center text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-200'>
-              <Image src={code} alt='design' width={100} height={100}/>
-              <h3 className='text-lg font-medium pt-8 pb-2'>JavaScript</h3>
-              <p className='py-2'>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus fugit quod dolores 
-              </p>
-              <h4 className='py-4 text-teal-600'>Back end</h4>
-              <p className='text-gray-800 py-1 dark:text-gray-200'>Node.js</p>
-              <p className='text-gray-800 py-1 dark:text-gray-200'>Node.js</p>
-              <p className='text-gray-800 py-1 dark:text-gray-200'>Node.js</p>
-            </div>
-
-            <div className='flex flex-col items-center text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-200'>
-              <Image src={code} alt='design' width={100} height={100}/>
-              <h3 className='text-lg font-medium pt-8 pb-2'>JavaScript</h3>
-              <p className='py-2'>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus fugit quod dolores 
-              </p>
-              <h4 className='py-4 text-teal-600'>Back end</h4>
-              <p className='text-gray-800 py-1 dark:text-gray-200'>Node.js</p>
-              <p className='text-gray-800 py-1 dark:text-gray-200'>Node.js</p>
-              <p className='text-gray-800 py-1 dark:text-gray-200'>Node.js</p>
-            </div>
+          <div className='lg:flex lg:flex-wrap lg:justify-center gap-10'>
+            <LinguagensCard src={code}/>
+            <LinguagensCard src={code}/>
+            <LinguagensCard src={code}/>
+            <LinguagensCard src={code}/>
+            <LinguagensCard src={code}/>
+            <LinguagensCard src={code}/>
           </div>
         </section>
 
