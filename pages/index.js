@@ -56,10 +56,12 @@ export default function Home() {
               <h3 className='text-2xl py-2 md:text-3xl dark:text-gray-200'>
                 Desenvolvedor Fullstack
               </h3>
-              <p className='text-md text-justify py-5 leading-8 text-gray-800 md:text-xl max-w-3xl mx-auto dark:text-gray-200'>
-              Sempre fui apaixonado em aprender e me desenvolver. Não atoa me encontrei no desenvolvimento de softwares, visto as imensas possibilidades. Mudanças constantes e resolução de problemas não são um empecilho, pois, pra mim, é aí onde acontece a evolução.
-              Meu objetivo é sempre agregar ao máximo à empresa com todas minhas habilidades e competências em tecnologias Front-end como JavaScript, React, Redux, Bootstrap, Tailwind, Context API, React Hooks. E em Back-end como MySQL, Node.js, express, sequelize.
-              E tudo isso sendo sempre acompanhado de perto por testes de integração e unitários, além de versionamento e controle de códigos com Git.
+              <p className='text-md text-justify indent-12 py-5 leading-8 text-gray-800 md:text-xl max-w-3xl mx-auto dark:text-gray-200'>
+                Sempre fui apaixonado em aprender e me desenvolver. Não atoa me encontrei no desenvolvimento de softwares, visto as imensas possibilidades. Mudanças constantes e resolução de problemas não são um empecilho, pois, pra mim, é aí onde acontece a evolução. 
+              </p>
+              <p className='text-md text-justify indent-12 py-5 leading-8 text-gray-800 md:text-xl max-w-3xl mx-auto dark:text-gray-200'>
+                Meu objetivo é sempre agregar ao máximo à empresa com todas minhas habilidades e competências em tecnologias <span className="text-teal-500">Front-end</span> como <span className="underline">JavaScript, React, Redux, Bootstrap, Tailwind, Context API, React Hooks</span>. E em <span className="text-teal-500">Back-end</span> como <span className="underline">MySQL, Node.js, express, sequelize</span>.
+                E tudo isso sendo sempre acompanhado de perto por testes de integração e unitários, além de versionamento e controle de códigos com Git.
               </p>
               <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-200'>
                 <a href="https://www.linkedin.com/in/thalesmsm/" target="_blank" rel="noreferrer">
@@ -139,11 +141,11 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <div className='rounded-full border-solid shadow-lg w-10 h-10 flex justify-center items-center bg-neutral-200 fixed z-0 right-8 bottom-8'>
-        <a href="#topo">
-          <BsArrowBarUp />
-        </a>
-      </div>
+      <a href="#topo">
+        <div className='rounded-full border-solid shadow-lg w-10 h-10 flex justify-center items-center bg-neutral-200 fixed z-0 right-8 bottom-8'>
+            <BsArrowBarUp />
+        </div>
+      </a>
     </div>
   )
 }
