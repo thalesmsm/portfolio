@@ -23,15 +23,19 @@ export default function Home() {
       <main className='bg-gray-50 px-10  md:px-20 lg:px-40 dark:bg-gray-900'>
         <section className='min-h-screen lg:flex lg:flex-col lg:justify-between'>
           <a className='absolute' name="topo"></a>
-          <nav className='py-5 mb-12 flex justify-between'>
-            <h1 className='text-xl font-burtons dark:text-gray-200'>
-              <a href="#services">services</a>
-            </h1>
-            <h1 className='text-xl font-burtons dark:text-gray-200'>
-              <a href="#portfolio">portfolio</a>
-            </h1>
-            <ul className='flex items-center'>
+          <nav className='py-5'>
+            <ul className='flex justify-around items-center'>
               <li>
+                <a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md' href="#">Curriculo</a>
+              </li>
+              <li>
+                <a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md' href="#services">Services</a>
+              </li>
+              <li>
+                <a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md' href="#portfolio">Portfolio</a>
+              </li>
+            </ul>
+              <div className='w-10 h-10 flex justify-center items-center absolute z-0 right-8 top-3'>
                 {!darkMode ? 
                 <BsFillMoonStarsFill 
                   onClick={() => setDarkMode(true)}
@@ -42,11 +46,7 @@ export default function Home() {
                   className='cursor-pointer text-2xl text-yellow-300'
                 />
                 }
-              </li>
-              <li>
-                <a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href="#">Curriculo</a>
-              </li>
-            </ul>
+              </div>
           </nav>
           <div className='text-center p-5 lg:flex lg:items-center lg:justify-between'>
             <div className='lg:w-1/2'>
@@ -57,7 +57,9 @@ export default function Home() {
                 Desenvolvedor Fullstack
               </h3>
               <p className='text-md text-justify py-5 leading-8 text-gray-800 md:text-xl max-w-3xl mx-auto dark:text-gray-200'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam excepturi, fuga hic, distinctio illo nihil quasi voluptate molestiae ipsum recusandae ratione reprehenderit laborum ut consequatur natus necessitatibus. Fuga, cum eos.
+              Sempre fui apaixonado em aprender e me desenvolver. Não atoa me encontrei no desenvolvimento de softwares, visto as imensas possibilidades. Mudanças constantes e resolução de problemas não são um empecilho, pois, pra mim, é aí onde acontece a evolução.
+              Meu objetivo é sempre agregar ao máximo à empresa com todas minhas habilidades e competências em tecnologias Front-end como JavaScript, React, Redux, Bootstrap, Tailwind, Context API, React Hooks. E em Back-end como MySQL, Node.js, express, sequelize.
+              E tudo isso sendo sempre acompanhado de perto por testes de integração e unitários, além de versionamento e controle de códigos com Git.
               </p>
               <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-200'>
                 <a href="https://www.linkedin.com/in/thalesmsm/" target="_blank" rel="noreferrer">
@@ -69,7 +71,7 @@ export default function Home() {
                 
               </div>
             </div>
-            <div className='relative mx-auto rounded-full w-80 h-80 overflow-hidden md:h-80 md:w-80'>
+            <div className='relative mx-auto rounded-full w-80 h-80 overflow-hidden shadow-xl md:h-80 md:w-80'>
               <Image src={deved} alt='deved' layout='fill' objectFit='cover'/>
             </div>
           </div>
