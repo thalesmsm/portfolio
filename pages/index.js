@@ -23,17 +23,22 @@ export default function Home() {
       <main className='bg-gray-50 px-10  md:px-20 lg:px-40 dark:bg-gray-900'>
         <section className='min-h-screen lg:flex lg:flex-col lg:justify-between'>
           <nav className='py-5 mb-12 flex justify-between'>
-            <h1 className='text-xl font-burtons dark:text-gray-200'>Hello</h1>
+            <h1 className='text-xl font-burtons dark:text-gray-200'>
+              <a href="#services">services</a>
+            </h1>
+            <h1 className='text-xl font-burtons dark:text-gray-200'>
+              <a href="#portfolio">portfolio</a>
+            </h1>
             <ul className='flex items-center'>
               <li>
                 {!darkMode ? 
                 <BsFillMoonStarsFill 
-                onClick={() => setDarkMode(true)}
-                className='cursor-pointer text-2xl'
+                  onClick={() => setDarkMode(true)}
+                  className='cursor-pointer text-2xl'
                 /> :
                 <BsSunFill 
-                onClick={() => setDarkMode(false)}
-                className='cursor-pointer text-2xl text-yellow-300'
+                  onClick={() => setDarkMode(false)}
+                  className='cursor-pointer text-2xl text-yellow-300'
                 />
                 }
               </li>
@@ -54,8 +59,13 @@ export default function Home() {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam excepturi, fuga hic, distinctio illo nihil quasi voluptate molestiae ipsum recusandae ratione reprehenderit laborum ut consequatur natus necessitatibus. Fuga, cum eos.
               </p>
               <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-200'>
-                <AiFillLinkedin />
-                <AiFillGithub />
+                <a href="https://www.linkedin.com/in/thalesmsm/" target="_blank" rel="noreferrer">
+                  <AiFillLinkedin />
+                </a>
+                <a href="https://github.com/thalesmsm" target="_blank" rel="noreferrer">
+                  <AiFillGithub />
+                </a>
+                
               </div>
             </div>
             <div className='relative mx-auto rounded-full w-80 h-80 overflow-hidden md:h-80 md:w-80'>
@@ -66,6 +76,7 @@ export default function Home() {
         </section>
 
         <section className='min-h-screen'>
+          <a name="services"></a>
           <div>
             <h3 className='text-3xl py-1 dark:text-gray-200'>
               Services I offer
@@ -93,7 +104,8 @@ export default function Home() {
           </div>
         </section>
 
-        <section>
+        <section className='mt-28'>
+          <a name="portfolio"></a>
           <div>
             <h3 className='text-3xl py-1 dark:text-gray-200'>Portfólio</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
