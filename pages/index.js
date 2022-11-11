@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import {BsFillMoonStarsFill } from 'react-icons/bs';
 import {AiFillLinkedin, AiFillGithub} from 'react-icons/ai';
+import Image from 'next/image';
+import deved from '../public/dev-ed-wave.png';
 
 export default function Home() {
   return (
@@ -24,6 +26,24 @@ export default function Home() {
               </li>
             </ul>
           </nav>
+          <div className='text-center p-10'>
+            <h2 className='text-5xl py-2 text-teal-600 font-medium'>
+              Thales Maciel
+            </h2>
+            <h3 className='text-2xl py-2'>
+              Desenvolvedor Fullstack
+            </h3>
+            <p className='text-md py-5 leading-8 text-gray-800'>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam excepturi, fuga hic, distinctio illo nihil quasi voluptate molestiae ipsum recusandae ratione reprehenderit laborum ut consequatur natus necessitatibus. Fuga, cum eos.
+            </p>
+          </div>
+          <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
+            <AiFillLinkedin />
+            <AiFillGithub />
+          </div>
+          <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden'>
+            <Image src={deved} alt='deved' layout='fill' objectFit='cover'/>
+          </div>
         </section>
       </main>
     </div>
