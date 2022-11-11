@@ -3,6 +3,9 @@ import {BsFillMoonStarsFill } from 'react-icons/bs';
 import {AiFillLinkedin, AiFillGithub} from 'react-icons/ai';
 import Image from 'next/image';
 import deved from '../public/dev-ed-wave.png';
+import code from "../public/code.png";
+import design from "../public/design.png";
+import consulting from "../public/consulting.png";
 
 export default function Home() {
   return (
@@ -63,6 +66,19 @@ export default function Home() {
               I offer from a wide range of services, including brand design,
               programming and teaching.
             </p>
+          </div>
+          <div>
+            <div className='flex flex-col items-center text-center shadow-lg p-10 rounded-xl my-10'>
+              <Image src={code} alt='design' width={100} height={100}/>
+              <h3 className='text-lg font-medium pt-8 pb-2'>JavaScript</h3>
+              <p className='py-2'>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus fugit quod dolores 
+              </p>
+              <h4 className='py-4 text-teal-600'>Back end</h4>
+              <p className='text-gray-800 py-1'>Node.js</p>
+              <p className='text-gray-800 py-1'>Node.js</p>
+              <p className='text-gray-800 py-1'>Node.js</p>
+            </div>
           </div>
         </section>
       </main>
