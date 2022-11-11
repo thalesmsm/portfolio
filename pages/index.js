@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import {BsFillMoonStarsFill, BsSunFill } from 'react-icons/bs';
+import {BsFillMoonStarsFill, BsSunFill, BsArrowBarUp } from 'react-icons/bs';
 import {AiFillLinkedin, AiFillGithub} from 'react-icons/ai';
 import Image from 'next/image';
 import deved from '../public/perfil.jpg';
@@ -22,6 +22,7 @@ export default function Home() {
 
       <main className='bg-gray-50 px-10  md:px-20 lg:px-40 dark:bg-gray-900'>
         <section className='min-h-screen lg:flex lg:flex-col lg:justify-between'>
+          <a className='absolute' name="topo"></a>
           <nav className='py-5 mb-12 flex justify-between'>
             <h1 className='text-xl font-burtons dark:text-gray-200'>
               <a href="#services">services</a>
@@ -136,6 +137,11 @@ export default function Home() {
           </div>
         </section>
       </main>
+      <div className='rounded-full border-solid shadow-lg w-10 h-10 flex justify-center items-center bg-neutral-200 fixed z-0 right-8 bottom-8'>
+        <a href="#topo">
+          <BsArrowBarUp />
+        </a>
+      </div>
     </div>
   )
 }
