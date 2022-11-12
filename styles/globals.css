@@ -22,3 +22,11 @@ a {
   font-family: "burtons";
   src: url("../public/Burtons.otf");
 }
+
+html {
+  scroll-behavior: smooth;
+}
+ 
+:target {
+  scroll-margin-top: .8em;
+}

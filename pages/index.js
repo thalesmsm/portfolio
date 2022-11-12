@@ -93,8 +93,7 @@ export default function Home() {
           <div className="w-16"></div>
         </section>
 
-        <section className="min-h-screen mt-6">
-          <a name="habilidades"></a>
+        <section id="habilidades" className="min-h-screen mt-6">
           <div>
             <h3 className="text-3xl py-1 dark:text-gray-200">
               Habilidades/Tecnologias
@@ -118,8 +117,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mt-6">
-          <a name="projetos"></a>
+        <section id="projetos" className="mt-6">
           <div>
             <h3 className="text-3xl py-1 dark:text-gray-200">Projetos</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
