@@ -13,10 +13,11 @@ import mysql from "../public/mysql.png";
 import mongo from "../public/mongo.png";
 import node from "../public/node.png";
 import jest from "../public/jest.png";
-import web1 from "../public/web1.png";
-import web2 from "../public/web2.png";
+import proj1 from "../public/proj1.png";
+import proj2 from "../public/proj2.png";
 import { useState } from "react";
 import LinguagensCard from "../components/LinguagensCard";
+import MenuHamburger from "../components/MenuHamburger";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -33,7 +34,8 @@ export default function Home() {
         <section className="min-h-screen lg:flex lg:flex-col lg:justify-between">
           <a className="absolute" name="topo"></a>
           <nav className="py-5">
-            <ul className="flex justify-around items-center">
+            <MenuHamburger />
+            <ul className="hidden md:flex md:justify-around md:items-center">
               <li>
                 <a className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md" href="#">Sobre</a>
               </li>
@@ -72,11 +74,9 @@ export default function Home() {
               </div>
               <div className="lg:w-1/2">
                 <p className="text-md text-justify indent-12 py-5 leading-8 text-gray-800 md:text-xl max-w-3xl mx-auto dark:text-gray-200">
-                  Sempre fui apaixonado em aprender e me desenvolver. Não atoa me encontrei no desenvolvimento de softwares, visto as imensas possibilidades. Mudanças constantes e resolução de problemas não são um empecilho, pois, pra mim, é aí onde acontece a evolução.
-                </p>
-                <p className="text-md text-justify indent-12 py-5 leading-8 text-gray-800 md:text-xl max-w-3xl mx-auto dark:text-gray-200">
-                  Meu objetivo é sempre agregar ao máximo com todas minhas habilidades e competências, adquiridas no curso da Trybe, em tecnologias <span className="text-teal-500">Front-end</span> como <span className="underline">JavaScript, React, Redux, Bootstrap, Tailwind, Context API, React Hooks</span>. E em <span className="text-teal-500">Back-end</span> como <span className="underline">MySQL, Node.js, express, sequelize</span>.
-                  E tudo isso sendo sempre acompanhado de perto por testes de integração e unitários, além de versionamento e controle de códigos com Git.
+                  Em transição de carreira para a área da tecnologia. Desde Fevereiro de 2022 estudando programação na <span className="text-teal-500">Trybe</span>, escola de tecnologia, e a cada dia mais apaixonado pela área de desenvolvimento de software, pela oportunidade de exercer minha criatividade para criar soluções que impactam na vida das pessoas. 
+
+                  Desde início dessa jornada temos vivência prática diária em programação e foco em habilidades para o mercado de trabalho, inclusive soft-skills. Desenvolvemos vários projetos com as tecnologias: <span className="font-bold">CSS, HTML, JavaScript, React, Redux, Context API, React Hooks, MySQL, Docker, Jest, Chai, Sinon, Node, Sequelize, Typescipt. Versionamos nosso código com Git e GitHub e também usamos métodos ágeis como Scrum e Kanban.</span>
                 </p>
                 <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-200">
                   <a href="https://www.linkedin.com/in/thalesmsm/" target="_blank" rel="noreferrer">
@@ -93,7 +93,7 @@ export default function Home() {
           <div className="w-16"></div>
         </section>
 
-        <section id="habilidades" className="min-h-screen mt-6">
+        <section id="habilidades" className="min-h-screen flex flex-col justify-evenly">
           <div>
             <h3 className="text-3xl py-1 dark:text-gray-200">
               Habilidades/Tecnologias
@@ -117,7 +117,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="projetos" className="mt-6">
+        <section id="projetos">
           <div>
             <h3 className="text-3xl py-1 dark:text-gray-200">Projetos</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
@@ -130,10 +130,10 @@ export default function Home() {
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row">
             <div className="basis-1/2 flex-1">
-              <Image src={web1} alt="web1" className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive"/>
+              <Image src={proj1} alt="web1" className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive"/>
             </div>
             <div className="basis-1/2 flex-1">
-              <Image src={web2} alt="web1" className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive"/>
+              <Image src={proj2} alt="web1" className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive"/>
             </div>
           </div>
         </section>
