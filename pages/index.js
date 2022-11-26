@@ -93,7 +93,7 @@ export default function Home() {
           <div className="w-16"></div>
         </section>
 
-        <section id="habilidades" className="min-h-screen flex flex-col justify-evenly">
+        <section id="habilidades" className="flex flex-col justify-evenly">
           <div>
             <h3 className="text-3xl py-1 dark:text-gray-200">
               Habilidades/Tecnologias
@@ -103,7 +103,7 @@ export default function Home() {
               a atuar como <span className="text-teal-500">Desenvolvedor Fullstack</span>. As principais 
             </p> */}
           </div>
-          <div className="flex flex-wrap justify-center gap-10">
+          <div className="flex overflow-x-scroll gap-10 h-52 lg:flex-wrap lg:h-96">
             <LinguagensCard src={html} name='HTML' />
             <LinguagensCard src={css} name='CSS'/>
             <LinguagensCard src={js} name='Javascript'/>
@@ -117,9 +117,9 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="projetos">
+        <section id="projetos" className="">
           <div>
-            <h3 className="text-3xl py-1 dark:text-gray-200">Projetos</h3>
+            <h3 className="text-3xl py-1 mt-10 dark:text-gray-200">Projetos</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Desde o começo da minha jornada como desenvolvedor, tenho feito projetos pessoais e 
               do curso da Trybe onde pude por em prática todos conhecimentos adquiridos até agora.
