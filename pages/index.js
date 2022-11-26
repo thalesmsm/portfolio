@@ -103,7 +103,7 @@ export default function Home() {
               a atuar como <span className="text-teal-500">Desenvolvedor Fullstack</span>. As principais 
             </p> */}
           </div>
-          <div className="flex overflow-x-scroll gap-10 h-52 lg:flex-wrap lg:h-96">
+          <div className="flex overflow-x-scroll gap-10 h-52 lg:flex-wrap lg:h-96 lg:overflow-hidden">
             <LinguagensCard src={html} name='HTML' />
             <LinguagensCard src={css} name='CSS'/>
             <LinguagensCard src={js} name='Javascript'/>
