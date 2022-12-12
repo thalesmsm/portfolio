@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import {BsFillMoonStarsFill, BsSunFill, BsArrowBarUp } from "react-icons/bs";
 import {AiFillLinkedin, AiFillGithub} from "react-icons/ai";
 import Image from "next/image";
@@ -130,10 +131,14 @@ export default function Home() {
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row">
             <div className="basis-1/2 flex-1">
-              <Image src={proj1} alt="web1" className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive"/>
+              <Link href="https://github.com/thalesmsm/NGCash-Challenge" target="_blank">
+                <Image src={proj1} alt="web1" className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive"/>
+              </Link>
             </div>
             <div className="basis-1/2 flex-1">
-              <Image src={proj2} alt="web1" className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive"/>
+              <Link href="https://github.com/thalesmsm/corebiz-frontend-challenger" target="_blank">
+                <Image src={proj2} alt="web1" className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive"/>
+              </Link>
             </div>
           </div>
         </section>
