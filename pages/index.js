@@ -16,6 +16,8 @@ import node from "../public/node.png";
 import jest from "../public/jest.png";
 import proj1 from "../public/proj1.png";
 import proj2 from "../public/proj2.png";
+import recipeapp1 from "../public/recipeapp1.png";
+import recipeapp2 from "../public/recipeapp2.png";
 import { useState } from "react";
 import LinguagensCard from "../components/LinguagensCard";
 import MenuHamburger from "../components/MenuHamburger";
@@ -129,15 +131,23 @@ export default function Home() {
               Alguns deles estão disponíveis e podem ser acessados clicando nos cards a baixo.
             </p>
           </div>
-          <div className="flex flex-col gap-10 py-10 lg:flex-row">
+          <div className="flex flex-col gap-10 py-10 md:flex-row md:flex-wrap">
             <div className="basis-1/2 flex-1">
               <Link href="https://github.com/thalesmsm/NGCash-Challenge" target="_blank">
-                <Image src={proj1} alt="web1" className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive"/>
+                <Image src={proj1} alt="web1" className="rounded-lg object-cover" width={"100%"} height={"100%"} />
               </Link>
             </div>
-            <div className="basis-1/2 flex-1">
+            <div className="md:basis-1/2 flex-1">
               <Link href="https://github.com/thalesmsm/corebiz-frontend-challenger" target="_blank">
-                <Image src={proj2} alt="web1" className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive"/>
+                <Image src={proj2} alt="web1" className="rounded-lg object-cover" width={"100%"} height={"100%"} />
+              </Link>
+            </div>
+            <div className="basis-1/3 flex-1 flex">
+              <Link href="https://github.com/thalesmsm/recipes-app" target="_blank">
+                <Image src={recipeapp1} alt="web1" className="rounded-lg object-cover" width={"50%"} height={"100%"} />
+              </Link>
+              <Link href="https://github.com/thalesmsm/recipes-app" target="_blank">
+                <Image src={recipeapp2} alt="web1" className="rounded-lg object-cover" width={"50%"} height={"100%"} />
               </Link>
             </div>
           </div>
